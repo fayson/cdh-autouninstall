@@ -82,7 +82,7 @@ sudo yum remove cloudera-scm-server-db
 scmAgentCmd="echo '[step 1] Stop cloudera-scm-agent service.....................';"
 function stopClouderaScmAgernt() {
   sudo service cloudera-scm-agent hard_stop_confirmed
-  scmAgentCmd="sudo service cloudera-scm-agent hard_stop_confirmed;"
+  scmAgentCmd=${scmAgentCmd}"sudo service cloudera-scm-agent hard_stop_confirmed;"
 }
 
 
@@ -100,7 +100,7 @@ function executeRemoveComponents() {
 cleanYumCmd="echo '[step 3] clean yum...........................................';"
 function cleanYum() {
   sudo yum clean all
-  cleanYumCmd="sudo yum clean all;"
+  cleanYumCmd=${cleanYumCmd}"sudo yum clean all;"
 }
 
 #四、杀死所有组件用户进程脚本
@@ -120,7 +120,7 @@ function killUserProcess() {
 umountCmd="echo '[step 5] uninstall cm_process..................................';"
 function umountCmProcesses() {
   sudo umount cm_processes;
-  umountCmd="sudo umount cm_processes;"
+  umountCmd=${umountCmd}"sudo umount cm_processes;"
 }
 
 #六、删除cm相关的信息，配置信息、依赖包、日志、yum缓存及运行、各组件依赖包等
