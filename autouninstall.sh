@@ -7,36 +7,34 @@
 # 脚本仅支持RHEL System
 #Author peach
 #Date	2017-05-17
+#update 2017-08-23 简化输入参数
 #---------------------------------------------------
 
 #判断输入参数是否完整
-if [ $# -lt 7 ]; then
+if [ $# -lt 3 ]; then
 	echo "params is can not be null."
-	echo "nodelist 1: 集群所有节点hostname文件"
-	echo "componentlist 2: 卸载执行指令"
-  echo "userlist 3: 集群中组件用户名"
-  echo "deletelist 4: 删除的目录列表"
-	echo "username 5: 登录集群用户名"
-	echo "longinType 6: 登录类型：key密钥文件,password密码登录,free免密认证"
-	echo "password 7: 登录集群的认证文件或者密码,如果为密钥文件则确保文件权限为600"
+	echo "username 1: 登录集群用户名"
+	echo "longinType 2: 登录类型：key密钥文件,password密码登录,free免密认证"
+	echo "password 3: 登录集群的认证文件或者密码,如果为密钥文件则确保文件权限为600"
 	exit 1;
 fi
 
+CURRENTPWD=`pwd`
 #集群所有节点文件
-nodelist=$1
+nodelist=$CURRENTPWD/node.list
 ##所有组件列表
-componentlist=$2
+componentlist=$CURRENTPWD/componentlists.list
 #集群各组件用户列表
-userlist=$3
+userlist=$CURRENTPWD/user.list
 #需要删除的目录列表
-deletelist=$4
+deletelist=$CURRENTPWD/delete.list
 #登录用户名
-username=$5
+username=$1
 #集群登录方式key、password和 free
-longinType=$6
+longinType=$2
 #登录秘钥,key文件or密码
 #秘钥文件权限为600 ，修改文件权限chmod 600 xxx.pem
-password=$7
+password=$3
 #获取当前服务器hostname
 currentHost=`hostname`
 
@@ -62,7 +60,7 @@ function remote() {
         send "yes\r";exp_continue
       }
       "assword:" {
-        send "admin\r";exp_continue
+        send "$4\r";exp_continue
       }
     }
 EOF
@@ -155,7 +153,7 @@ for node in `cat $nodelist`; do
     if [ $longinType = "key" ]; then
       ssh -t -i $password $username@$node "$cmds"
     elif [ $longinType = "password" ]; then
-      remote $username $node "$cmds"
+      remote $username $node "$cmds" $password
     else
       ssh -t $username@$node "$cmds"
     fi
