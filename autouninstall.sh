@@ -23,7 +23,7 @@ CURRENTPWD=`pwd`
 #集群所有节点文件
 nodelist=$CURRENTPWD/node.list
 ##所有组件列表
-componentlist=$CURRENTPWD/componentlists.list
+componentlist=$CURRENTPWD/components.list
 #集群各组件用户列表
 userlist=$CURRENTPWD/user.list
 #需要删除的目录列表
