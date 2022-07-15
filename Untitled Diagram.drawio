@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T07:28:57.998Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="RB7iqe7uScsCzorOeTXw" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-15T07:31:25.325Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="p7WRUNyrIuKFa9vAs-UE" version="20.0.4" type="github">
   <diagram id="oWH_SK-iqgNCPnG6fPYH" name="Page-1">
     <mxGraphModel dx="1236" dy="1955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -430,10 +430,10 @@
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-112" value="Console-WEBUI&lt;br&gt;（基础服务模块前端）" style="rounded=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="930" y="-1060" width="135" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-113" value="Cas Service&lt;br&gt;（统一认证中心）" style="rounded=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-113" value="Workspace-WEBUI&lt;br&gt;（项目空间模块前端）" style="rounded=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="1150" y="-1060" width="135" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-114" value="Cas Service&lt;br&gt;（统一认证中心）" style="rounded=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-114" value="Metadata-WEBUI&lt;br&gt;(元数据模块前端)" style="rounded=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="1370" y="-1060" width="135" height="40" as="geometry" />
         </mxCell>
       </root>
