@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T06:10:36.377Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="QsMgww8Dhz0DJ0yoIEpR" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-15T06:17:32.082Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="kmMcYx6iUd9SsMg3vg2Y" version="20.0.4" type="github">
   <diagram id="oWH_SK-iqgNCPnG6fPYH" name="Page-1">
     <mxGraphModel dx="1236" dy="2009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -257,7 +257,7 @@
           <mxGeometry x="648" y="-389" width="104" height="59" as="geometry" />
         </mxCell>
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-17" value="展示层" style="rounded=0;whiteSpace=wrap;html=1;align=center;horizontal=0;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="40" y="-915" width="718" height="90" as="geometry" />
+          <mxGeometry x="40" y="-820" width="718" height="100" as="geometry" />
         </mxCell>
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-18" value="MySQL&lt;br&gt;（元数据）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="676" y="-634.5" width="75" height="51" as="geometry" />
@@ -268,22 +268,16 @@
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-20" value="MDO Gateway&lt;br&gt;（统一网关入口）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="238" y="-691.5" width="135" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="118" y="-900" width="120" height="60" as="geometry" />
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-28" value="登录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-810" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-29" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="-900" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="431" y="-900" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-31" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="589" y="-900" width="120" height="60" as="geometry" />
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-29" value="平台用户管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="227" y="-810" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-32" value="HDFS（分布式文件系统）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="144" y="-360" width="490" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-35" value="Airlfow（作业流调度系统）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-35" value="Airlfow（工作流调度系统）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="91" y="-550" width="540" height="40" as="geometry" />
         </mxCell>
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-37" value="YARN（集群资源管理）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -328,11 +322,20 @@
         <mxCell id="x_IECBm6aQpzs8IEv9Kb-50" value="MDO Airflow&lt;br&gt;（Airflow服务模块）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="386" y="-629.5" width="135" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-53" value="MDO Eureka&lt;br&gt;（服务发现注册中心）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-53" value="Nginx&lt;br&gt;（反向代理服务）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="531" y="-691.5" width="135" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="x_IECBm6aQpzs8IEv9Kb-54" value="MDO MetaData&lt;br&gt;（服务发现注册中心）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-54" value="MDO MetaData&lt;br&gt;（元数据管理模块）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="531" y="-629.5" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-55" value="CDH平台资源申请" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="496" y="-810" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-56" value="平台权限管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="-810" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x_IECBm6aQpzs8IEv9Kb-57" value="CDH平台资源申请" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="-810" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
